@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.father {
+    width: 700px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.father>div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+</style>
+
+<body>
+    <div class="father ">
+        <div id="one">1111</div>
+        <div id="two">2222</div>
+        <div id="three">3333</div>
+    </div>
+</body>
+
+</html>

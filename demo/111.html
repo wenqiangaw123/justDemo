@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <style>
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.main{
+    		border: 1px solid #000;
+    		width: 300px;
+    		height: 500px;
+    		overflow: auto;
+    	}
+    	.content{
+    		width: 60px;
+    		height: 200px;
+    		background-color: pink;
+    		margin-bottom: 10px;
+    	}
+    </style>
+    <body>
+		<div class="main">
+			
+		</div>
+		<button>点击</button>
+    </body>
+    <script src="jquery.min.js"></script>
+    <script>
+    	var num = 0;
+    	$("button").on("click",function(){
+    		num++;
+    		$(".main").append('<div class="content">'+num+'</div>').scrollTop(num*201);
+
+    	});
+    </script>
+</html>
+
+<script>
+	
+</script>

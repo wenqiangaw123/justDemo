@@ -1,0 +1,40 @@
+/*
+* @Author: zhiqiang.wen
+* @Date:   2017-06-08 23:04:27
+* @Last Modified by:   zhiqiang.wen
+* @Last Modified time: 2017-06-09 10:14:09
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.left {
+	width: 300px;
+	height: 100vh;
+	background-color: blue;
+}
+.wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.left>div {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	flex: 1;
+}
+.zero {
+	background-color: pink;
+}
+.one {
+	background-color: yellowgreen;
+}
+.two {
+	background-color: red;
+}
+#iframeId {
+	flex: 1;
+}
